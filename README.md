@@ -8,9 +8,9 @@ Modèle
 Résultats
 ## Recolte des données 
 ### Structure base de données d'entrée
-Notre base de données se compose de ... mails labélisés comme étant des spam ou non. Elle comporte 2 colonnes :
-body <- le corpus de texte du mail 
-Spam <- la variable cible à deux modalités "True" si le mail est un spam "False" si il ne l'est pas
+Notre base de données se compose de ... Mails labellisés comme étant des spam ou non. Elle comporte 2 colonnes : 
+- `body` <- le corpus de texte du mail 
+- `Spam` <- la variable cible à deux modalités "True" si le mail est un spam "False" s'il ne l'est pas
 
 ## Prétraitement du texte 
 ## Modèle 
