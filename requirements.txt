@@ -1,0 +1,11 @@
+googleapiclient.discovery
+google_auth_oauthlib.flow
+google.auth.transport.requests
+pickle
+os.path
+base64
+pandas
+pyarrow
+email
+glob
+os
