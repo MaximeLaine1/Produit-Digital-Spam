@@ -7,6 +7,13 @@ Ce projet consiste à développer une architecture neuronale  utilisant BERT pou
 -Modèle
 -Résultats
 ## Recolte des données 
+La base de données de ce projet a deux sources. 
+
+D'abord, une adresse gmail a été créée et abonnée à des dizaines de sites qui envoient des spams (vente en ligne, pornographie, site de rencontre, site d'argent facile, etc) et des newsletters. Un script python permet de télécharger les contenus des mails et les mettre en individus dans un fichier parquet. 
+Ensuite, une autre base de données a été utilisée pour compléter la première. 
+
+Ainsi, notre base contient 2000 mails, 1000 spams et 1000 non-spams. 
+
 ### Structure base de données d'entrée
 Notre base de données se compose de ... Mails labellisés comme étant des spam ou non. Elle comporte 2 colonnes : 
 - `body` <- le corpus de texte du mail 
@@ -30,12 +37,19 @@ Ensuite, le modèle de BERT développé par Google permet de mieux comprendre le
 ### Classifier Bayésien Naif
 ![image](https://user-images.githubusercontent.com/114995738/205309627-7c4167ba-882b-42e4-a342-334e77832030.png)
 Matrice de confusion pour le classifier bayésien naïf
+
+Accuracy : 89 %
 ### Modèle de BERT
 ![image](https://user-images.githubusercontent.com/114995738/205309952-f49f73ce-a2c4-4266-b91d-5d215673d44f.png)
 Matrice de confusion pour le modèle de BERT
-### Modèle SVM 
+Accuracy : 84 %
+### Modèle SVM Linear Kernel
 ![image](https://user-images.githubusercontent.com/114995738/205310278-46dbaf60-da32-4765-8305-2f400c693105.png)
 Matrice de confusion pour le modèle SVM
+Accuracy : 98 %
+
+
+
 
 
 
