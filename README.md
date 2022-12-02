@@ -28,4 +28,14 @@ Ensuite, le modèle de BERT développé par Google permet de mieux comprendre le
 
 ## Résultats des modèles 
 ### Classifier Bayésien Naif
+![image](https://user-images.githubusercontent.com/114995738/205309627-7c4167ba-882b-42e4-a342-334e77832030.png)
+Matrice de confusion pour le classifier bayésien naïf
+### Modèle de BERT
+![image](https://user-images.githubusercontent.com/114995738/205309952-f49f73ce-a2c4-4266-b91d-5d215673d44f.png)
+Matrice de confusion pour le modèle de BERT
+### Modèle SVM 
+![image](https://user-images.githubusercontent.com/114995738/205310278-46dbaf60-da32-4765-8305-2f400c693105.png)
+Matrice de confusion pour le modèle SVM
+
+
 
