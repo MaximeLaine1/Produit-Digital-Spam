@@ -14,7 +14,7 @@ Ce projet consiste à la mise en en place de différentes technique de machine L
 La base de données de ce projet a deux sources. 
 
 D'abord, une adresse gmail a été créée et abonnée à des dizaines de sites qui envoient des spams (vente en ligne, pornographie, site de rencontre, site d'argent facile, etc) et des newsletters. Un script python permet de télécharger les contenus des mails et les mettre en individus dans un fichier parquet. 
-<!-- Ensuite, une autre base de données a été utilisée pour compléter la première (disponible à l'adresse suivante :
+Ensuite, une autre base de données a été utilisée pour compléter la première (disponible à l'adresse suivante :
 
 Ainsi, notre base contient 2000 mails, 1000 spams et 1000 non-spams. 
 
