@@ -6,10 +6,10 @@ Ce projet consiste à la mise en en place de différentes technique de machine L
 - Modèle TF-IDF + SVM (Support Vector Machin)
 
 # Plan 
-Recolte des données
-Prétraitement du texte
-Modèle
-Résultats
+- Recolte des données
+- Prétraitement du texte
+- Modèle
+-Résultats
 ## Recolte des données 
 La base de données de ce projet a deux sources. 
 
