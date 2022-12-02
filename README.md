@@ -3,7 +3,7 @@
 Ce projet consiste à la mise en en place de différentes technique de machine Learning afin de prédire la nature d'un mail. Notre analyse s'appuie sur une base de données construite via la récupération de mail spam d'une boîte de récéption. Les modèles NLP qui ont été choisis dans ce travail sont les suivants :
 - Le classifier Bayesien Naïf 
 - Le modèle de Bert 
-- Modèle TF-IDF + SVM (Support Vector Machin)
+- Modèle TF-IDF + SVM (Support Vector Machine)
 
 # Plan 
 - Recolte des données
