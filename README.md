@@ -2,15 +2,15 @@
 
 Ce projet consiste à développer une architecture neuronale  utilisant BERT pour effectuer une détection de mails spam se basant sur le contexte du textuel du mail pour effectuer la prédiction. Le contexte est construit uniquement à partir de la base texte et non pas sur les adresses d'envoi du mail.
 # Plan 
--Recolte des données
--Prétraitement du texte
--Modèle
--Résultats
+Recolte des données
+Prétraitement du texte
+Modèle
+Résultats
 ## Recolte des données 
 La base de données de ce projet a deux sources. 
 
 D'abord, une adresse gmail a été créée et abonnée à des dizaines de sites qui envoient des spams (vente en ligne, pornographie, site de rencontre, site d'argent facile, etc) et des newsletters. Un script python permet de télécharger les contenus des mails et les mettre en individus dans un fichier parquet. 
-Ensuite, une autre base de données a été utilisée pour compléter la première. 
+<!-- Ensuite, une autre base de données a été utilisée pour compléter la première (disponible à l'adresse suivante :
 
 Ainsi, notre base contient 2000 mails, 1000 spams et 1000 non-spams. 
 
