@@ -45,6 +45,11 @@ from unittest import mock
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
   
 def getEmails():
+    '''
+    Fonction qui permet de récupérer une Series pandas des corpus de mails
+    depuis notre adresse mail
+    Output: df.series
+    '''
     creds = None
 
     if os.path.exists('token.pickle'):
@@ -115,7 +120,12 @@ def getEmails():
 
 
 def count_mail(service):
-
+    '''
+    Fonction qui compte le nombre de mails disponible dans la boîte mail
+    et soustrait le nombre mails disponibles dans la base de données
+    Output: 
+    int; nombre de mails à récupérer
+    '''
     getProfile = service.users().getProfile(userId='me').execute()
     total_mails = getProfile["messagesTotal"]
 
@@ -128,7 +138,12 @@ def count_mail(service):
   
   
 def clean_data(df):
-
+    '''
+    Fonction qui nettoie la base de donnée en remplaçant ou en supprimant certains
+    mots en fonctions de certains caractères ou chaîne de caractère
+    Output:
+    pandas df: dataframe nettoyé
+    '''
     row = str(df)
     brut = row.replace('\r\n\r\n',' ')
     brut = brut.replace('\r\n',' ')
@@ -171,7 +186,11 @@ def clean_data(df):
 
 
 def get_ham(len_df_mails):
-
+    '''
+    Fonction qui récupère et nettoie la base de données de mails non spams
+    Output:
+    pandas df: df de mails non spams nettoyés
+    '''
     path = 'ham/' 
     df_mails = pd.DataFrame(columns = ["body"])
     eml_files = glob.glob(path + '*.eml.txt')
